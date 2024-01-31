@@ -96,14 +96,14 @@ class Login():
         self.driver = webdriver.Chrome(options=options)
 
         #Realizar login no site
-        self.driver.get('http://sistemas.sefaz.am.gov.br/gcc/entrada.do')  # Substitua pelo URL do site
+        self.driver.get('#####################################')  # Substitua pelo URL do site
         usuario = self.driver.find_element(By.ID, 'username')  # Substitua pelo campo de usuário
         senha_da_pagina = self.driver.find_element(By.ID, 'password')  # Substitua pelo campo de senha
         botao_login = self.driver.find_element(By.XPATH, '//*[@id="fm1"]/fieldset/div[3]/div/div[4]/input[4]')  # Substitua pelo botão de login
     
         senha = self.carregar_senha()
 
-        usuario.send_keys('03483401253')
+        usuario.send_keys('**********')
         senha_da_pagina.send_keys(senha)
         botao_login.click()
 
